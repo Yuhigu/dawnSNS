@@ -1,6 +1,9 @@
 @extends('layouts.login')
 
 @section('content')
-<h2>機能を実装していきましょう。</h2>
-
+  <form action="/create" method="post">
+    @csrf
+    <input type="text"name="tweetname">
+    <input type="image" src="images/post.png" alt="押して">
+  </form>
 @endsection
