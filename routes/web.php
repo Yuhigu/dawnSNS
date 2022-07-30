@@ -40,3 +40,7 @@ Route::get('/follow-list','PostsController@index');
 Route::get('/follower-list','PostsController@index');
 
 Route::post('/create', 'PostsController@create');
+
+Route::post('/postUpdate','PostsController@update');
+
+Route::delete('/postDelete','PostsController@delete');
